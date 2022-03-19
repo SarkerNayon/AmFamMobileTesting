@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<list key="EGit.KnownHosts">
+		<item value="git.eclipse.org"/>
+		<item value="bitbucket.org"/>
+		<item value="github.com"/>
+	</list>
+	<list key="RepositorySelectionPage.UsedUris">
+		<item value="https://github.com/TofaelKabir/CoreJavaOctober2021.git"/>
+		<item value="https://github.com/EnthrallOctober2021/Android-setting-app.git"/>
+		<item value="https://github.com/TofaelKabir/January2022CoreJava.git"/>
+		<item value="https://github.com/EnthrallOctober2021/Progressive_TDD.git"/>
+		<item value="https://github.com/Rayhanrahman1995/CityBankBDD.git"/>
+		<item value="https://github.com/sohag2018/Enthrall_OCT21.git"/>
+		<item value="https://github.com/SarkerNayon/BDD-Geico.git"/>
+		<item value="https://github.com/SarkerNayon/TNG-BankOfAmerica.git"/>
+		<item value="https://github.com/SarkerNayon/karateFramework.git"/>
+		<item value="https://github.com/SarkerNayon/SeleniumProjects.git"/>
+	</list>
+</section>

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename Java project &apos;CoreJavaJanuary2022(Nayon)&apos; to &apos;JavaOOP(January_Batch)&apos;&#x0A;- Original element: &apos;CoreJavaJanuary2022(Nayon)&apos;&#x0A;- Renamed element: &apos;CoreJavaJanuary2022(Nayon)&apos;&#x0A;- Update references to refactored element" description="Rename Java project &apos;CoreJavaJanuary2022(Nayon)&apos;" flags="7" id="org.eclipse.jdt.ui.rename.java.project" input="=CoreJavaJanuary2022\(Nayon)" name="JavaOOP(January_Batch)" references="true" stamp="1644639017678" version="1.0"/>
+</session>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="SmartImportWizard">
+		<item key="SmartImportRootWizardPage.STORE_HIDE_ALREADY_OPEN" value="false"/>
+		<item key="SmartImportRootWizardPage.STORE_CLOSE_IMPORTED" value="false"/>
+		<item key="SmartImportRootWizardPage.STORE_NESTED_PROJECTS" value="true"/>
+		<item key="SmartImportRootWizardPage.STORE_CONFIGURE_NATURES" value="true"/>
+		<list key="org.eclipse.ui.internal.wizards.datatransfer.SmartImportRootWizardPage.knownSources">
+			<item value="/Users/nsarker/git/CoreJavaOctober2021"/>
+			<item value="/Users/nsarker/git/Android-setting-app"/>
+			<item value="/Users/nsarker/git/January2022CoreJava"/>
+			<item value="/Users/nsarker/git/Progressive_TDD"/>
+			<item value="/Users/nsarker/git/CityBankBDD"/>
+			<item value="/Users/nsarker/git/Enthrall_OCT21"/>
+			<item value="/Users/nsarker/git/TNG-BankOfAmerica"/>
+			<item value="/Users/nsarker/git/BDD-Geico"/>
+			<item value="/Users/nsarker/git/karateFramework"/>
+			<item value="/Users/nsarker/git/SeleniumProjects"/>
+			<item value="/Users/nsarker/git/HomeWorkCoreJava"/>
+			<item value="/Users/nsarker/eclipse-workspace/HomeWorkCoreJava"/>
+		</list>
+	</section>
+	<section name="NewWizardAction">
+		<item key="NewWizardSelectionPage.STORE_SELECTED_ID" value="org.eclipse.m2e.core.wizards.Maven2ProjectWizard"/>
+		<list key="NewWizardSelectionPage.STORE_EXPANDED_CATEGORIES_ID">
+			<item value="org.eclipse.m2e"/>
+		</list>
+	</section>
+	<section name="CleanDialogSettings">
+		<item key="TOGGLE_SELECTED" value="false"/>
+		<item key="DIALOG_WIDTH" value="540"/>
+		<item key="DIALOG_HEIGHT" value="367"/>
+		<item key="DIALOG_FONT_NAME" value="1|.AppleSystemUIFont|11.0|0|COCOA|1|.AppleSystemUIFont"/>
+	</section>
+	<section name="ChooseWorkspaceDialogSettings">
+		<item key="DIALOG_X_ORIGIN" value="454"/>
+		<item key="DIALOG_Y_ORIGIN" value="301"/>
+	</section>
+</section>

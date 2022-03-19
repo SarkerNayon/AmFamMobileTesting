@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Cucumber</title>
+	<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+	<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20class%3D%22ml-3%20ml-md-0%22%20viewBox%3D%220%200%2040.59%2046.31%22%20width%3D%2240.59%22%20height%3D%2246.31%22%3E%0A%20%20%20%20%3Cg%3E%0A%20%20%20%20%20%20%20%20%3Cpath%20fill%3D%22%2323d96c%22%20fill-rule%3D%22evenodd%22%20d%3D%22M30.283%203.645q-.528-.317-1.08-.593a16.164%2016.164%200%2000-1.154-.518c-.124-.052-.247-.1-.372-.149-.343-.127-.689-.268-1.042-.371a19.427%2019.427%200%2010-9.792%2037.51v5.56c11.676-1.753%2022.016-10.979%2022.787-23.093.459-7.289-3.193-14.73-9.347-18.346z%22%2F%3E%0A%20%20%20%20%20%20%20%20%3Cpath%20fill%3D%22%23173647%22%20d%3D%22M15.787%2046.307v-5.935A20.472%2020.472%200%201126.959%201.015c.274.08.557.187.832.291l.248.093c.165.064.291.113.417.167.348.137.739.313%201.208.543q.589.295%201.153.633c6.393%203.756%2010.354%2011.518%209.857%2019.316-.763%2012-10.722%2022.122-23.679%2024.067zm4.8-44.214h-.026a18.366%2018.366%200%2000-3.524%2036.408l.85.165v5.18c11.392-2.224%2020.009-11.272%2020.686-21.922.448-7.033-3.1-14.018-8.83-17.383l-.008-.005A14.691%2014.691%200%200027.654%203.5a5.74%205.74%200%2000-.344-.138l-.27-.1a9.49%209.49%200%2000-.708-.249%2018.425%2018.425%200%2000-5.743-.92z%22%2F%3E%0A%20%20%20%20%20%20%20%20%3Cpath%20fill%3D%22%23173647%22%20fill-rule%3D%22evenodd%22%20d%3D%22M16.666%2010.58a1.8%201.8%200%20011.583.608%204.184%204.184%200%2001.728%201.107c.645%201.422%201.027%203.461.23%204.605a6.334%206.334%200%2001-3.981-3.087%203.236%203.236%200%2001-.347-1.339%201.957%201.957%200%20011.787-1.894zm-5.683%208.025a7.742%207.742%200%20001.218.737%205.789%205.789%200%20004.883-.138%206.116%206.116%200%2000-3.345-3.45%203.664%203.664%200%2000-1.442-.321%201.884%201.884%200%2000-.319%200%201.766%201.766%200%2000-.995%203.172zm6.1%203.433c-.777-.518-2.379-.309-3.312-.292a4.416%204.416%200%2000-1.666.352%203.5%203.5%200%2000-1.218.738%201.817%201.817%200%20001.409%203.171%203.3%203.3%200%20001.442-.321c1.436-.62%203.141-2.32%203.346-3.648zm2.61%202a6.556%206.556%200%2000-3.724%203.506%203.091%203.091%200%2000-.321%201.314%201.907%201.907%200%20003.3%201.346%207.422%207.422%200%2000.7-1.218c.621-1.333.866-3.72.046-4.948zm2.557-7.167a5.941%205.941%200%20003.7-3.167%203.243%203.243%200%2000.319-1.346%201.915%201.915%200%2000-1.794-1.954%201.832%201.832%200%2000-1.6.641%207.382%207.382%200%2000-.705%201.218c-.62%201.434-.842%203.48.081%204.603zm4.208%2012.115a3.244%203.244%200%2000-.321-1.345%205.869%205.869%200%2000-3.554-3.269%205.386%205.386%200%2000-.226%204.711%204.147%204.147%200%2000.7%201.121c1.133%201.23%203.505.32%203.402-1.218zm4.2-6.28a7.466%207.466%200%2000-1.217-.7%204.425%204.425%200%2000-1.666-.352%206.4%206.4%200%2000-3.188.555%205.959%205.959%200%20003.316%203.386%203.672%203.672%200%20001.442.32%201.8%201.8%200%20001.31-3.209z%22%2F%3E%0A%20%20%20%20%3C%2Fg%3E%0A%3C%2Fsvg%3E">
+	<style>
+.cucumber-react .cucumber-status--passed {
+  color: #2CB14A;
+}
+.cucumber-react .cucumber-status--skipped {
+  color: #00A0CC;
+}
+.cucumber-react .cucumber-status--pending {
+  color: #FFAD33;
+}
+.cucumber-react .cucumber-status--undefined {
+  color: #FFAD33;
+}
+.cucumber-react .cucumber-status--ambiguous {
+  color: #F4EBFD;
+}
+.cucumber-react .cucumber-status--failed {
+  color: #BB0000;
+}
+.cucumber-react .cucumber-status--unknown {
+  color: #B6BECB;
+}
+.cucumber-react h1, .cucumber-react h2, .cucumber-react h3 {
+  padding: 0;
+  margin: 0;
+}
+.cucumber-react a {
+  color: inherit;
+}
+.cucumber-react .gherkin-document-list {
+  font: 14px "Open Sans", sans-serif;
+  color: #161C24;
+  background: #fff;
+  overflow-x: hidden;
+}
+.cucumber-react .cucumber-title {
+  margin-top: 0.3em;
+  margin-bottom: 0;
+  display: inline-block;
+}
+.cucumber-react .cucumber-title__keyword {
+  font-weight: bold;
+}
+.cucumber-react .cucumber-title__text {
+  font-weight: normal;
+}
+.cucumber-react .cucumber-tags {
+  padding: 0;
+  margin-bottom: 0;
+}
+.cucumber-react .cucumber-tags .cucumber-tag {
+  display: inline;
+  list-style-type: none;
+  padding: 4px 8px 4px 8px;
+  margin-right: 6px;
+  background-color: #FFFFFF;
+  border-radius: 6px;
+}
+.cucumber-react .cucumber-feature__icon {
+  padding-top: 0.35em;
+  padding-right: 0.5em;
+}
+.cucumber-react .cucumber-description,
+.cucumber-react .cucumber-children {
+  margin-left: 1em;
+}
+.cucumber-react .cucumber-feature,
+.cucumber-react .cucumber-rule,
+.cucumber-react .cucumber-scenario,
+.cucumber-react .cucumber-background {
+  margin-bottom: 1em;
+}
+.cucumber-react .cucumber-steps {
+  list-style-type: none;
+  padding-left: 10px;
+}
+.cucumber-react .cucumber-steps .cucumber-step {
+  display: flex;
+}
+.cucumber-react .cucumber-steps .cucumber-step__status {
+  padding-top: 0.2em;
+  padding-right: 0.5em;
+}
+.cucumber-react .cucumber-steps .cucumber-step__content {
+  flex-grow: 1;
+  max-width: calc(100% - 1.5em);
+}
+.cucumber-react .cucumber-steps .cucumber-step__keyword {
+  font-weight: bold;
+}
+.cucumber-react .cucumber-steps .cucumber-step__text {
+  font-weight: normal;
+}
+.cucumber-react .cucumber-steps .cucumber-step__param {
+  font-weight: normal;
+  font-style: italic;
+}
+.cucumber-react .cucumber-table {
+  border-collapse: collapse;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+.cucumber-react .cucumber-table__header-cell {
+  border: 1px solid #4B5662;
+  padding: 0.3em;
+}
+.cucumber-react .cucumber-table__cell {
+  border: 1px solid #4B5662;
+  padding: 0.3em;
+}
+.cucumber-react .cucumber-table__cell__status {
+  padding: 0.5em 3px 3px 3px;
+}
+.cucumber-react .cucumber-table__cell__step {
+  flex-grow: 1;
+}
+.cucumber-react .cucumber-code {
+  padding: 0.25em;
+  background-color: #ebebeb;
+}
+.cucumber-react .cucumber-error {
+  padding: 0.5em;
+  margin: 0;
+  overflow-x: auto;
+}
+.cucumber-react .cucumber-no-documents {
+  font: 14px "Open Sans", sans-serif;
+}
+.cucumber-react .cucumber-attachment__icon {
+  margin-right: 0.5em;
+}
+.cucumber-react .cucumber-attachment__image {
+  max-width: 100%;
+  margin-top: 1em;
+}
+.cucumber-react .cucumber-attachment__text {
+  background-color: #ebebeb;
+  padding: 0.5em;
+  overflow-x: auto;
+}
+.cucumber-react .cucumber-anchor {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-top: 0.3em;
+}
+.cucumber-react .cucumber-anchor__link {
+  opacity: 0;
+  transition: all 0.35s ease-in-out;
+  position: absolute;
+  left: -20px;
+  display: flex;
+  align-items: center;
+}
+.cucumber-react .cucumber-anchor__icon {
+  margin-right: 0.5em;
+}
+.cucumber-react .cucumber-anchor:hover a {
+  opacity: 1;
+  width: max-content;
+  transition: all 0.35s ease-in-out;
+}
+.cucumber-react .cucumber-anchor > * {
+  height: 100%;
+  margin-top: 0px;
+}
+
+.cucumber-report-header {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  font: 11px "Open Sans", sans-serif;
+  margin-bottom: 1em;
+}
+.cucumber-report-header > * {
+  padding: 1em;
+}
+.cucumber-report-header .cucumber-status-filter {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+.cucumber-report-header .cucumber-status-filter table {
+  width: 100%;
+}
+.cucumber-report-header .cucumber-execution-data {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+.cucumber-report-header .cucumber-search-bar {
+  border-right: 0;
+}
+.cucumber-report-header .cucumber-search-bar form.cucumber-search-bar-search {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 9fr 1fr;
+}
+.cucumber-report-header .cucumber-search-bar form.cucumber-search-bar-search input {
+  padding: 0.4em;
+  border-radius: 0;
+}
+.cucumber-report-header .cucumber-search-bar form.cucumber-search-bar-search button {
+  height: 2.2em;
+  padding-left: 0.6em;
+  padding-right: 0.6em;
+}
+.cucumber-report-header .cucumber-search-bar p.help {
+  font-size: 80%;
+}
+.cucumber-report-header .cucumber-search-bar form.cucumber-search-bar-filter ul {
+  display: inline;
+}
+.cucumber-report-header .cucumber-search-bar form.cucumber-search-bar-filter ul li {
+  list-style-type: none;
+  display: inline-block;
+}
+.cucumber-report-header .cucumber-search-bar form.cucumber-search-bar-filter ul li input {
+  display: inline-block;
+  width: auto;
+  height: 0.6em;
+}
+.cucumber-report-header .cucumber-search-bar form.cucumber-search-bar-filter ul li label {
+  padding-right: 1em;
+}
+
+@media only screen and (min-width: 600px) {
+  .cucumber-report-header {
+    grid-template-columns: 1fr 1fr;
+  }
+  .cucumber-report-header .cucumber-status-filter {
+    border-right: 1px solid rgba(0, 0, 0, 0.1);
+  }
+  .cucumber-report-header .cucumber-search-bar {
+    grid-column: 1/-1;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .cucumber-report-header {
+    grid-template-columns: 1fr 1fr 2fr;
+  }
+  .cucumber-report-header .cucumber-status-filter {
+    border-bottom: 0;
+  }
+  .cucumber-report-header .cucumber-execution-data {
+    border-right: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 0;
+  }
+  .cucumber-report-header .cucumber-search-bar {
+    grid-column: auto;
+  }
+}
+.accordion {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 2px;
+}
+
+.accordion__item + .accordion__item {
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.accordion__button {
+    background-color: #f4f4f4;
+    color: #444;
+    cursor: pointer;
+    padding: 10px;
+    width: 100%;
+    text-align: left;
+    border: none;
+}
+
+.accordion__button:hover {
+    background-color: #ddd;
+}
+
+.accordion__button:before {
+    display: inline-block;
+    content: '';
+    height: 10px;
+    width: 10px;
+    margin-right: 12px;
+    border-bottom: 2px solid currentColor;
+    border-right: 2px solid currentColor;
+    transform: rotate(-45deg);
+}
+
+.accordion__button[aria-expanded='true']::before,
+.accordion__button[aria-selected='true']::before {
+    transform: rotate(45deg);
+}
+
+.accordion__panel {
+    padding: 20px;
+    animation: fadein 0.35s ease-in;
+}
+
+	</style>
+</head>
+<body>
+<div id="content">
+</div>
+<script>
+window.CUCUMBER_MESSAGES = [{"meta":{"protocolVersion":"15.0.0","implementation":{"name":"cucumber-jvm","version":"6.11.0"},"runtime":{"name":"Java HotSpot(TM) 64-Bit Server VM","version":"25.311-b11"},"os":{"name":"Mac OS X"},"cpu":{"name":"x86_64"}}},{"testRunStarted":{"timestamp":{"seconds":"1644028353","nanos":233000000}}},{"source":{"uri":"file:///Users/nsarker/eclipse-workspace/SantanderCovidResource/features/covid19Resource.feature","data":"Feature: Bank user probided with new Covid19 Resource\n\n  Scenario Outline: Test Five area zip code to verify the function is working\n    Given user on Santander.com home page\n    When user click on learn about Covid19 resource\n    And user click on Branch locator\n    And user click on filter\n    And user select location type branch\n    And user typed their \u003czip code\u003e\n    Then user should see some location on the map\n\n    Examples:\n    |zip code|\n    |10007| \n    |11423| \n    |11415| \n    |10005| \n    |10345| \n    ","mediaType":"text/x.cucumber.gherkin+plain"}},{"gherkinDocument":{"uri":"file:///Users/nsarker/eclipse-workspace/SantanderCovidResource/features/covid19Resource.feature","feature":{"location":{"line":1,"column":1},"language":"en","keyword":"Feature","name":"Bank user probided with new Covid19 Resource","children":[{"scenario":{"location":{"line":3,"column":3},"keyword":"Scenario Outline","name":"Test Five area zip code to verify the function is working","steps":[{"location":{"line":4,"column":5},"keyword":"Given ","text":"user on Santander.com home page","id":"935b48ce-ff78-48d2-9cd9-7649d1a2eab8"},{"location":{"line":5,"column":5},"keyword":"When ","text":"user click on learn about Covid19 resource","id":"19996078-8a68-43e4-be78-f352b0f04bf3"},{"location":{"line":6,"column":5},"keyword":"And ","text":"user click on Branch locator","id":"8ec5a370-b1ca-4b33-92e4-07d92f6b747c"},{"location":{"line":7,"column":5},"keyword":"And ","text":"user click on filter","id":"61b67635-0808-4392-bb02-286ebccb4fcf"},{"location":{"line":8,"column":5},"keyword":"And ","text":"user select location type branch","id":"6caccd9a-9218-405f-a911-3098af966b70"},{"location":{"line":9,"column":5},"keyword":"And ","text":"user typed their \u003czip code\u003e","id":"265504ea-0a66-4207-93ff-c577b692a31e"},{"location":{"line":10,"column":5},"keyword":"Then ","text":"user should see some location on the map","id":"87655cec-9996-4136-9b39-55a4d168e945"}],"examples":[{"location":{"line":12,"column":5},"keyword":"Examples","tableHeader":{"location":{"line":13,"column":5},"cells":[{"location":{"line":13,"column":6},"value":"zip code"}],"id":"4a317220-d7db-46d2-a757-805b79bd8fe7"},"tableBody":[{"location":{"line":14,"column":5},"cells":[{"location":{"line":14,"column":6},"value":"10007"}],"id":"2d75f4d0-3ef5-4484-a300-519743797d8a"},{"location":{"line":15,"column":5},"cells":[{"location":{"line":15,"column":6},"value":"11423"}],"id":"08278fcd-e2ae-4a57-84dc-c5054b98f973"},{"location":{"line":16,"column":5},"cells":[{"location":{"line":16,"column":6},"value":"11415"}],"id":"217c3aab-18fa-4f32-9a8a-d6d7cdd07a37"},{"location":{"line":17,"column":5},"cells":[{"location":{"line":17,"column":6},"value":"10005"}],"id":"e13ce34d-0813-4577-bd0d-bacb25996a45"},{"location":{"line":18,"column":5},"cells":[{"location":{"line":18,"column":6},"value":"10345"}],"id":"8195b8d5-4f60-43da-87ba-6b347d8f520a"}],"id":"4d1997da-1c30-45fe-8d3d-a168c5aa90a4"}],"id":"b4533d5b-af24-45a0-a038-8203d4e80331"}}]}}},{"pickle":{"id":"d48a9fe8-824c-4631-84b5-637d3b4d54f7","uri":"file:///Users/nsarker/eclipse-workspace/SantanderCovidResource/features/covid19Resource.feature","name":"Test Five area zip code to verify the function is working","language":"en","steps":[{"text":"user on Santander.com home page","id":"ec2dd0f2-ffb1-48ae-a39e-4e489fd3843e","astNodeIds":["935b48ce-ff78-48d2-9cd9-7649d1a2eab8","2d75f4d0-3ef5-4484-a300-519743797d8a"]},{"text":"user click on learn about Covid19 resource","id":"db8c7ae6-2e03-4552-9452-01439b2791d8","astNodeIds":["19996078-8a68-43e4-be78-f352b0f04bf3","2d75f4d0-3ef5-4484-a300-519743797d8a"]},{"text":"user click on Branch locator","id":"4db62d00-3517-4a93-9f51-ec2f748aff1c","astNodeIds":["8ec5a370-b1ca-4b33-92e4-07d92f6b747c","2d75f4d0-3ef5-4484-a300-519743797d8a"]},{"text":"user click on filter","id":"674f780c-83ff-47fb-a1ed-2debdec01775","astNodeIds":["61b67635-0808-4392-bb02-286ebccb4fcf","2d75f4d0-3ef5-4484-a300-519743797d8a"]},{"text":"user select location type branch","id":"d7353544-2bff-4f03-89bb-31aea7266da6","astNodeIds":["6caccd9a-9218-405f-a911-3098af966b70","2d75f4d0-3ef5-4484-a300-519743797d8a"]},{"text":"user typed their 10007","id":"4d57db44-2922-4ce4-a355-7f0db7afcc55","astNodeIds":["265504ea-0a66-4207-93ff-c577b692a31e","2d75f4d0-3ef5-4484-a300-519743797d8a"]},{"text":"user should see some location on the map","id":"b826283d-0566-4498-8e68-4baa10b76fe4","astNodeIds":["87655cec-9996-4136-9b39-55a4d168e945","2d75f4d0-3ef5-4484-a300-519743797d8a"]}],"astNodeIds":["b4533d5b-af24-45a0-a038-8203d4e80331","2d75f4d0-3ef5-4484-a300-519743797d8a"]}},{"pickle":{"id":"84171cc0-82d5-4b48-9da3-26562852e84e","uri":"file:///Users/nsarker/eclipse-workspace/SantanderCovidResource/features/covid19Resource.feature","name":"Test Five area zip code to verify the function is working","language":"en","steps":[{"text":"user on Santander.com home page","id":"f9ea7c58-42c7-454b-9ebe-eb2cd4156249","astNodeIds":["935b48ce-ff78-48d2-9cd9-7649d1a2eab8","08278fcd-e2ae-4a57-84dc-c5054b98f973"]},{"text":"user click on learn about Covid19 resource","id":"b58db44a-21da-4581-8cf1-fd80ff887ac6","astNodeIds":["19996078-8a68-43e4-be78-f352b0f04bf3","08278fcd-e2ae-4a57-84dc-c5054b98f973"]},{"text":"user click on Branch locator","id":"90d0a5c4-68bb-4990-9320-bb7af1bb069e","astNodeIds":["8ec5a370-b1ca-4b33-92e4-07d92f6b747c","08278fcd-e2ae-4a57-84dc-c5054b98f973"]},{"text":"user click on filter","id":"1f4875ff-f731-46b0-aa27-51277822c3d1","astNodeIds":["61b67635-0808-4392-bb02-286ebccb4fcf","08278fcd-e2ae-4a57-84dc-c5054b98f973"]},{"text":"user select location type branch","id":"3f9a0094-f8ad-4342-94dd-f8fade1ed0df","astNodeIds":["6caccd9a-9218-405f-a911-3098af966b70","08278fcd-e2ae-4a57-84dc-c5054b98f973"]},{"text":"user typed their 11423","id":"e3efc4a6-2c11-415f-aa54-3ded9439aaed","astNodeIds":["265504ea-0a66-4207-93ff-c577b692a31e","08278fcd-e2ae-4a57-84dc-c5054b98f973"]},{"text":"user should see some location on the map","id":"2e26ff75-25f9-4bd7-89ee-056587841249","astNodeIds":["87655cec-9996-4136-9b39-55a4d168e945","08278fcd-e2ae-4a57-84dc-c5054b98f973"]}],"astNodeIds":["b4533d5b-af24-45a0-a038-8203d4e80331","08278fcd-e2ae-4a57-84dc-c5054b98f973"]}},{"pickle":{"id":"55238aad-b566-4ec9-a173-4e4c3e82785b","uri":"file:///Users/nsarker/eclipse-workspace/SantanderCovidResource/features/covid19Resource.feature","name":"Test Five area zip code to verify the function is working","language":"en","steps":[{"text":"user on Santander.com home page","id":"1969c73e-c294-4e2b-b1c5-3a9d636c7c5c","astNodeIds":["935b48ce-ff78-48d2-9cd9-7649d1a2eab8","217c3aab-18fa-4f32-9a8a-d6d7cdd07a37"]},{"text":"user click on learn about Covid19 resource","id":"57c3304c-42a3-4b33-9dba-0d375b56af83","astNodeIds":["19996078-8a68-43e4-be78-f352b0f04bf3","217c3aab-18fa-4f32-9a8a-d6d7cdd07a37"]},{"text":"user click on Branch locator","id":"aa62a92f-f408-46b7-8473-53f1d8ce1c7a","astNodeIds":["8ec5a370-b1ca-4b33-92e4-07d92f6b747c","217c3aab-18fa-4f32-9a8a-d6d7cdd07a37"]},{"text":"user click on filter","id":"5a36b3a8-b9ee-469d-9008-f181ca9acf13","astNodeIds":["61b67635-0808-4392-bb02-286ebccb4fcf","217c3aab-18fa-4f32-9a8a-d6d7cdd07a37"]},{"text":"user select location type branch","id":"ed9025f0-7c4e-4e2f-93a5-724b110655de","astNodeIds":["6caccd9a-9218-405f-a911-3098af966b70","217c3aab-18fa-4f32-9a8a-d6d7cdd07a37"]},{"text":"user typed their 11415","id":"e8b4806d-0892-4318-a910-b8a4df71914b","astNodeIds":["265504ea-0a66-4207-93ff-c577b692a31e","217c3aab-18fa-4f32-9a8a-d6d7cdd07a37"]},{"text":"user should see some location on the map","id":"8ad8ca12-c223-451f-89e2-50eba83b4631","astNodeIds":["87655cec-9996-4136-9b39-55a4d168e945","217c3aab-18fa-4f32-9a8a-d6d7cdd07a37"]}],"astNodeIds":["b4533d5b-af24-45a0-a038-8203d4e80331","217c3aab-18fa-4f32-9a8a-d6d7cdd07a37"]}},{"pickle":{"id":"a7ba3e7c-4b43-42d0-93ab-faf220bea884","uri":"file:///Users/nsarker/eclipse-workspace/SantanderCovidResource/features/covid19Resource.feature","name":"Test Five area zip code to verify the function is working","language":"en","steps":[{"text":"user on Santander.com home page","id":"629a3529-63ad-407e-ad8e-56fcd5f83906","astNodeIds":["935b48ce-ff78-48d2-9cd9-7649d1a2eab8","e13ce34d-0813-4577-bd0d-bacb25996a45"]},{"text":"user click on learn about Covid19 resource","id":"46d85418-0d1f-4d89-bd0a-1e028d8816ea","astNodeIds":["19996078-8a68-43e4-be78-f352b0f04bf3","e13ce34d-0813-4577-bd0d-bacb25996a45"]},{"text":"user click on Branch locator","id":"c7f83d47-f2b0-4eb3-ac55-eadf36b13e75","astNodeIds":["8ec5a370-b1ca-4b33-92e4-07d92f6b747c","e13ce34d-0813-4577-bd0d-bacb25996a45"]},{"text":"user click on filter","id":"6583e970-9978-4a67-ad63-5448e65bfbbd","astNodeIds":["61b67635-0808-4392-bb02-286ebccb4fcf","e13ce34d-0813-4577-bd0d-bacb25996a45"]},{"text":"user select location type branch","id":"a34ea41c-2f52-4a06-a0ea-60ca80129348","astNodeIds":["6caccd9a-9218-405f-a911-3098af966b70","e13ce34d-0813-4577-bd0d-bacb25996a45"]},{"text":"user typed their 10005","id":"3fdd0175-8e88-4e2b-96ab-f3d8b020f14a","astNodeIds":["265504ea-0a66-4207-93ff-c577b692a31e","e13ce34d-0813-4577-bd0d-bacb25996a45"]},{"text":"user should see some location on the map","id":"9e47b142-0588-497b-81e3-988bbb13d086","astNodeIds":["87655cec-9996-4136-9b39-55a4d168e945","e13ce34d-0813-4577-bd0d-bacb25996a45"]}],"astNodeIds":["b4533d5b-af24-45a0-a038-8203d4e80331","e13ce34d-0813-4577-bd0d-bacb25996a45"]}},{"pickle":{"id":"47b62561-0bb5-4f27-abbb-3e8bf6def421","uri":"file:///Users/nsarker/eclipse-workspace/SantanderCovidResource/features/covid19Resource.feature","name":"Test Five area zip code to verify the function is working","language":"en","steps":[{"text":"user on Santander.com home page","id":"d27e8608-9d20-4035-a8d1-144b9c2142aa","astNodeIds":["935b48ce-ff78-48d2-9cd9-7649d1a2eab8","8195b8d5-4f60-43da-87ba-6b347d8f520a"]},{"text":"user click on learn about Covid19 resource","id":"ca5262d6-1dfd-4885-8d0c-838eec138b6b","astNodeIds":["19996078-8a68-43e4-be78-f352b0f04bf3","8195b8d5-4f60-43da-87ba-6b347d8f520a"]},{"text":"user click on Branch locator","id":"18d1a72e-554c-4fae-8ac4-99bb24100df5","astNodeIds":["8ec5a370-b1ca-4b33-92e4-07d92f6b747c","8195b8d5-4f60-43da-87ba-6b347d8f520a"]},{"text":"user click on filter","id":"9f7648ec-94af-4080-af21-71142355997f","astNodeIds":["61b67635-0808-4392-bb02-286ebccb4fcf","8195b8d5-4f60-43da-87ba-6b347d8f520a"]},{"text":"user select location type branch","id":"47872c1c-9d7b-4e52-ac3f-9c1a8c2db64e","astNodeIds":["6caccd9a-9218-405f-a911-3098af966b70","8195b8d5-4f60-43da-87ba-6b347d8f520a"]},{"text":"user typed their 10345","id":"e1ed959a-9097-464b-94ab-cb94934630bf","astNodeIds":["265504ea-0a66-4207-93ff-c577b692a31e","8195b8d5-4f60-43da-87ba-6b347d8f520a"]},{"text":"user should see some location on the map","id":"88d40c62-024b-45d5-ba72-0b142cf0d19a","astNodeIds":["87655cec-9996-4136-9b39-55a4d168e945","8195b8d5-4f60-43da-87ba-6b347d8f520a"]}],"astNodeIds":["b4533d5b-af24-45a0-a038-8203d4e80331","8195b8d5-4f60-43da-87ba-6b347d8f520a"]}},{"testCase":{"id":"ea1358b0-01b6-490d-8e14-025515d56b30","pickleId":"d48a9fe8-824c-4631-84b5-637d3b4d54f7","testSteps":[{"id":"b3a70cc8-1a6e-42d9-9410-2842c9f1a3c4","hookId":"06cdf84e-5f14-4625-b86b-ae3e21075a38"},{"id":"074c5182-adba-44c3-a860-fee776c61a4b","pickleStepId":"ec2dd0f2-ffb1-48ae-a39e-4e489fd3843e","stepDefinitionIds":["9bc1e4c1-721d-473a-b503-fbd28ecab70f"],"stepMatchArgumentsLists":[{}]},{"id":"a5dc31c2-b97c-4867-8ed0-ef139afb99e5","pickleStepId":"db8c7ae6-2e03-4552-9452-01439b2791d8","stepDefinitionIds":["23de6926-654c-4e3a-82d2-1ea0f88be9c8"],"stepMatchArgumentsLists":[{}]},{"id":"748b7b78-09f2-4192-875a-2c7802aa14b9","pickleStepId":"4db62d00-3517-4a93-9f51-ec2f748aff1c","stepDefinitionIds":["06b473ba-05c1-49f4-a2c8-f0ba1fa5d9e0"],"stepMatchArgumentsLists":[{}]},{"id":"443f4cd8-eef4-477c-bf51-b4b70ca3b4e0","pickleStepId":"674f780c-83ff-47fb-a1ed-2debdec01775","stepDefinitionIds":["b83ff497-3605-4fa3-88ff-9d09ec47cb40"],"stepMatchArgumentsLists":[{}]},{"id":"cc2dd4bb-ad57-4e05-a01e-e1e30de99006","pickleStepId":"d7353544-2bff-4f03-89bb-31aea7266da6","stepDefinitionIds":["13340145-ab5a-4453-8b80-bfc4ff2555e5"],"stepMatchArgumentsLists":[{}]},{"id":"37bb1855-eaad-4961-b53e-f428f7a1a5fe","pickleStepId":"4d57db44-2922-4ce4-a355-7f0db7afcc55","stepMatchArgumentsLists":[{}]},{"id":"243b2052-3b4f-463b-9ae9-99d19cc84db1","pickleStepId":"b826283d-0566-4498-8e68-4baa10b76fe4","stepDefinitionIds":["f3bc7469-4457-4553-b909-733c72a3f589"],"stepMatchArgumentsLists":[{}]},{"id":"b4062b02-c20e-4cf1-8397-45594282e194","hookId":"66b21314-8ba7-45bb-949e-a7bc98817dcf"}]}},{"testCaseStarted":{"timestamp":{"seconds":"1644028353","nanos":502000000},"testCaseId":"ea1358b0-01b6-490d-8e14-025515d56b30","id":"a795dde9-c31f-4001-ad4b-2cc8af398467"}},{"testStepStarted":{"timestamp":{"seconds":"1644028353","nanos":506000000},"testStepId":"b3a70cc8-1a6e-42d9-9410-2842c9f1a3c4","testCaseStartedId":"a795dde9-c31f-4001-ad4b-2cc8af398467"}},{"testStepFinished":{"testStepResult":{"status":"PASSED","duration":{"seconds":"39","nanos":424000000}},"timestamp":{"seconds":"1644028392","nanos":930000000},"testStepId":"b3a70cc8-1a6e-42d9-9410-2842c9f1a3c4","testCaseStartedId":"a795dde9-c31f-4001-ad4b-2cc8af398467"}},{"testStepStarted":{"timestamp":{"seconds":"1644028392","nanos":942000000},"testStepId":"074c5182-adba-44c3-a860-fee776c61a4b","testCaseStartedId":"a795dde9-c31f-4001-ad4b-2cc8af398467"}},{"testStepFinished":{"testStepResult":{"status":"PASSED","duration":{"nanos":32000000}},"timestamp":{"seconds":"1644028392","nanos":974000000},"testStepId":"074c5182-adba-44c3-a860-fee776c61a4b","testCaseStartedId":"a795dde9-c31f-4001-ad4b-2cc8af398467"}},{"testStepStarted":{"timestamp":{"seconds":"1644028392","nanos":975000000},"testStepId":"a5dc31c2-b97c-4867-8ed0-ef139afb99e5","testCaseStartedId":"a795dde9-c31f-4001-ad4b-2cc8af398467"}},{"testStepFinished":{"testStepResult":{"status":"PASSED","duration":{"seconds":"3","nanos":652000000}},"timestamp":{"seconds":"1644028396","nanos":627000000},"testStepId":"a5dc31c2-b97c-4867-8ed0-ef139afb99e5","testCaseStartedId":"a795dde9-c31f-4001-ad4b-2cc8af398467"}},{"testStepStarted":{"timestamp":{"seconds":"1644028396","nanos":631000000},"testStepId":"748b7b78-09f2-4192-875a-2c7802aa14b9","testCaseStartedId":"a795dde9-c31f-4001-ad4b-2cc8af398467"}},{"testStepFinished":{"testStepResult":{"status":"PASSED","duration":{"seconds":"4","nanos":620000000}},"timestamp":{"seconds":"1644028401","nanos":251000000},"testStepId":"748b7b78-09f2-4192-875a-2c7802aa14b9","testCaseStartedId":"a795dde9-c31f-4001-ad4b-2cc8af398467"}},{"testStepStarted":{"timestamp":{"seconds":"1644028401","nanos":252000000},"testStepId":"443f4cd8-eef4-477c-bf51-b4b70ca3b4e0","testCaseStartedId":"a795dde9-c31f-4001-ad4b-2cc8af398467"}},{"testStepFinished":{"testStepResult":{"status":"PASSED","duration":{"nanos":152000000}},"timestamp":{"seconds":"1644028401","nanos":404000000},"testStepId":"443f4cd8-eef4-477c-bf51-b4b70ca3b4e0","testCaseStartedId":"a795dde9-c31f-4001-ad4b-2cc8af398467"}},{"testStepStarted":{"timestamp":{"seconds":"1644028401","nanos":415000000},"testStepId":"cc2dd4bb-ad57-4e05-a01e-e1e30de99006","testCaseStartedId":"a795dde9-c31f-4001-ad4b-2cc8af398467"}},{"testStepFinished":{"testStepResult":{"status":"PASSED","duration":{"nanos":194000000}},"timestamp":{"seconds":"1644028401","nanos":609000000},"testStepId":"cc2dd4bb-ad57-4e05-a01e-e1e30de99006","testCaseStartedId":"a795dde9-c31f-4001-ad4b-2cc8af398467"}},{"testStepStarted":{"timestamp":{"seconds":"1644028401","nanos":612000000},"testStepId":"37bb1855-eaad-4961-b53e-f428f7a1a5fe","testCaseStartedId":"a795dde9-c31f-4001-ad4b-2cc8af398467"}},{"testStepFinished":{"testStepResult":{"status":"UNDEFINED","duration":{"nanos":1000000}},"timestamp":{"seconds":"1644028401","nanos":613000000},"testStepId":"37bb1855-eaad-4961-b53e-f428f7a1a5fe","testCaseStartedId":"a795dde9-c31f-4001-ad4b-2cc8af398467"}},{"testStepStarted":{"timestamp":{"seconds":"1644028401","nanos":616000000},"testStepId":"243b2052-3b4f-463b-9ae9-99d19cc84db1","testCaseStartedId":"a795dde9-c31f-4001-ad4b-2cc8af398467"}},{"testStepFinished":{"testStepResult":{"status":"SKIPPED","duration":{"nanos":1000000}},"timestamp":{"seconds":"1644028401","nanos":617000000},"testStepId":"243b2052-3b4f-463b-9ae9-99d19cc84db1","testCaseStartedId":"a795dde9-c31f-4001-ad4b-2cc8af398467"}},{"testStepStarted":{"timestamp":{"seconds":"1644028401","nanos":619000000},"testStepId":"b4062b02-c20e-4cf1-8397-45594282e194","testCaseStartedId":"a795dde9-c31f-4001-ad4b-2cc8af398467"}},{"testStepFinished":{"testStepResult":{"status":"PASSED","duration":{"nanos":116000000}},"timestamp":{"seconds":"1644028401","nanos":735000000},"testStepId":"b4062b02-c20e-4cf1-8397-45594282e194","testCaseStartedId":"a795dde9-c31f-4001-ad4b-2cc8af398467"}},{"testCaseFinished":{"timestamp":{"seconds":"1644028401","nanos":736000000},"testCaseStartedId":"a795dde9-c31f-4001-ad4b-2cc8af398467"}},{"testCase":{"id":"7e0bc2b3-a428-4b5d-ac39-e82494e3f7ac","pickleId":"84171cc0-82d5-4b48-9da3-26562852e84e","testSteps":[{"id":"701fcd6d-9f3e-4130-9c52-72dead08db00","hookId":"06cdf84e-5f14-4625-b86b-ae3e21075a38"},{"id":"45d9937a-4fb9-4f8e-98db-99b26e5dbb1b","pickleStepId":"f9ea7c58-42c7-454b-9ebe-eb2cd4156249","stepDefinitionIds":["441d9201-6852-4e48-a762-8e84a75cb49b"],"stepMatchArgumentsLists":[{}]},{"id":"dbde449b-5565-4d50-baf8-3d2ea4e151ba","pickleStepId":"b58db44a-21da-4581-8cf1-fd80ff887ac6","stepDefinitionIds":["9e37df49-b230-4392-8484-5eeeac4baec4"],"stepMatchArgumentsLists":[{}]},{"id":"3d9d337a-e115-45a6-a702-c5f65129fecf","pickleStepId":"90d0a5c4-68bb-4990-9320-bb7af1bb069e","stepDefinitionIds":["fe4ed664-be97-4506-9cb7-26e095c51b43"],"stepMatchArgumentsLists":[{}]},{"id":"d4470c9b-6aeb-4d1f-abe4-c46c5b41cb71","pickleStepId":"1f4875ff-f731-46b0-aa27-51277822c3d1","stepDefinitionIds":["6281db0e-a070-4608-9f38-7af4cf14192a"],"stepMatchArgumentsLists":[{}]},{"id":"50070124-ff69-41cc-9540-682ae85ee355","pickleStepId":"3f9a0094-f8ad-4342-94dd-f8fade1ed0df","stepDefinitionIds":["3f96453f-c204-45fa-b861-31062d99ea47"],"stepMatchArgumentsLists":[{}]},{"id":"12e642c8-721c-42b1-bad9-95bbf193caf3","pickleStepId":"e3efc4a6-2c11-415f-aa54-3ded9439aaed","stepMatchArgumentsLists":[{}]},{"id":"33a6ad9c-829d-4cb2-ac48-29f534cf7f55","pickleStepId":"2e26ff75-25f9-4bd7-89ee-056587841249","stepDefinitionIds":["ef95265b-2058-401f-a7df-2a6684a49dc7"],"stepMatchArgumentsLists":[{}]},{"id":"01bd0c13-3137-4eeb-b204-5dd421b139bc","hookId":"66b21314-8ba7-45bb-949e-a7bc98817dcf"}]}},{"testCaseStarted":{"timestamp":{"seconds":"1644028401","nanos":759000000},"testCaseId":"7e0bc2b3-a428-4b5d-ac39-e82494e3f7ac","id":"1483353e-e88b-4990-949c-a8f37debf3a7"}},{"testStepStarted":{"timestamp":{"seconds":"1644028401","nanos":759000000},"testStepId":"701fcd6d-9f3e-4130-9c52-72dead08db00","testCaseStartedId":"1483353e-e88b-4990-949c-a8f37debf3a7"}},{"testStepFinished":{"testStepResult":{"status":"PASSED","duration":{"seconds":"18","nanos":873000000}},"timestamp":{"seconds":"1644028420","nanos":632000000},"testStepId":"701fcd6d-9f3e-4130-9c52-72dead08db00","testCaseStartedId":"1483353e-e88b-4990-949c-a8f37debf3a7"}},{"testStepStarted":{"timestamp":{"seconds":"1644028420","nanos":635000000},"testStepId":"45d9937a-4fb9-4f8e-98db-99b26e5dbb1b","testCaseStartedId":"1483353e-e88b-4990-949c-a8f37debf3a7"}},{"testStepFinished":{"testStepResult":{"status":"PASSED","duration":{"nanos":10000000}},"timestamp":{"seconds":"1644028420","nanos":645000000},"testStepId":"45d9937a-4fb9-4f8e-98db-99b26e5dbb1b","testCaseStartedId":"1483353e-e88b-4990-949c-a8f37debf3a7"}},{"testStepStarted":{"timestamp":{"seconds":"1644028420","nanos":645000000},"testStepId":"dbde449b-5565-4d50-baf8-3d2ea4e151ba","testCaseStartedId":"1483353e-e88b-4990-949c-a8f37debf3a7"}},{"testStepFinished":{"testStepResult":{"status":"PASSED","duration":{"seconds":"3","nanos":630000000}},"timestamp":{"seconds":"1644028424","nanos":275000000},"testStepId":"dbde449b-5565-4d50-baf8-3d2ea4e151ba","testCaseStartedId":"1483353e-e88b-4990-949c-a8f37debf3a7"}},{"testStepStarted":{"timestamp":{"seconds":"1644028424","nanos":279000000},"testStepId":"3d9d337a-e115-45a6-a702-c5f65129fecf","testCaseStartedId":"1483353e-e88b-4990-949c-a8f37debf3a7"}},{"testStepFinished":{"testStepResult":{"status":"PASSED","duration":{"seconds":"8","nanos":123000000}},"timestamp":{"seconds":"1644028432","nanos":402000000},"testStepId":"3d9d337a-e115-45a6-a702-c5f65129fecf","testCaseStartedId":"1483353e-e88b-4990-949c-a8f37debf3a7"}},{"testStepStarted":{"timestamp":{"seconds":"1644028432","nanos":402000000},"testStepId":"d4470c9b-6aeb-4d1f-abe4-c46c5b41cb71","testCaseStartedId":"1483353e-e88b-4990-949c-a8f37debf3a7"}},{"testStepFinished":{"testStepResult":{"status":"PASSED","duration":{"nanos":96000000}},"timestamp":{"seconds":"1644028432","nanos":498000000},"testStepId":"d4470c9b-6aeb-4d1f-abe4-c46c5b41cb71","testCaseStartedId":"1483353e-e88b-4990-949c-a8f37debf3a7"}},{"testStepStarted":{"timestamp":{"seconds":"1644028432","nanos":499000000},"testStepId":"50070124-ff69-41cc-9540-682ae85ee355","testCaseStartedId":"1483353e-e88b-4990-949c-a8f37debf3a7"}},{"testStepFinished":{"testStepResult":{"status":"PASSED","duration":{"nanos":232000000}},"timestamp":{"seconds":"1644028432","nanos":731000000},"testStepId":"50070124-ff69-41cc-9540-682ae85ee355","testCaseStartedId":"1483353e-e88b-4990-949c-a8f37debf3a7"}},{"testStepStarted":{"timestamp":{"seconds":"1644028432","nanos":732000000},"testStepId":"12e642c8-721c-42b1-bad9-95bbf193caf3","testCaseStartedId":"1483353e-e88b-4990-949c-a8f37debf3a7"}},{"testStepFinished":{"testStepResult":{"status":"UNDEFINED","duration":{}},"timestamp":{"seconds":"1644028432","nanos":732000000},"testStepId":"12e642c8-721c-42b1-bad9-95bbf193caf3","testCaseStartedId":"1483353e-e88b-4990-949c-a8f37debf3a7"}},{"testStepStarted":{"timestamp":{"seconds":"1644028432","nanos":736000000},"testStepId":"33a6ad9c-829d-4cb2-ac48-29f534cf7f55","testCaseStartedId":"1483353e-e88b-4990-949c-a8f37debf3a7"}},{"testStepFinished":{"testStepResult":{"status":"SKIPPED","duration":{"nanos":1000000}},"timestamp":{"seconds":"1644028432","nanos":737000000},"testStepId":"33a6ad9c-829d-4cb2-ac48-29f534cf7f55","testCaseStartedId":"1483353e-e88b-4990-949c-a8f37debf3a7"}},{"testStepS

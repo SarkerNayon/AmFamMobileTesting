@@ -1,0 +1,17 @@
+package javaChalenges;
+
+public class SumOfArray {
+
+	public static void main(String[] args) {
+		int ar[] = { 1, 2, 3, 4, 5 };
+		int sum = 0;
+
+		for (int i = 0; i < ar.length; i++) {
+			sum = i + (i + 1);
+
+		}
+		System.out.println(sam);
+
+	}
+
+}
