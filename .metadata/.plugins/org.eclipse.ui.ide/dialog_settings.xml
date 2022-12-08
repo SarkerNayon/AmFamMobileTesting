@@ -6,6 +6,15 @@
 		<item key="SmartImportRootWizardPage.STORE_NESTED_PROJECTS" value="true"/>
 		<item key="SmartImportRootWizardPage.STORE_CONFIGURE_NATURES" value="true"/>
 		<list key="org.eclipse.ui.internal.wizards.datatransfer.SmartImportRootWizardPage.knownSources">
+			<item value="/Users/nsarker/git/TDD_Geico"/>
+			<item value="/Users/nsarker/git/CoreJava"/>
+			<item value="/Users/nsarker/git"/>
+			<item value="/Users/nsarker/git/April2022CoreJava"/>
+			<item value="/Users/nsarker/git/CollectionFramework_Sohag"/>
+			<item value="/Users/nsarker/git/PracticeGithub"/>
+			<item value="/Users/nsarker/git/RestAssured"/>
+			<item value="/Users/nsarker/git/Appium"/>
+			<item value="/Users/nsarker/git/AmFamMobileAutomation"/>
 			<item value="/Users/nsarker/git/CoreJavaOctober2021"/>
 			<item value="/Users/nsarker/git/Android-setting-app"/>
 			<item value="/Users/nsarker/git/January2022CoreJava"/>
